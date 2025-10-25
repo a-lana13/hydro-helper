@@ -10,6 +10,9 @@ A simple, terminal-based water tracking application written in C that helps you 
 ## 🛠️ Compilation
 #### Linux/MacOS
 ```bash
+git clone _____
+cd hydro-helper
+cd src
 gcc -o hydro-helper main.c app.c
 ./hydro-helper
 ```
