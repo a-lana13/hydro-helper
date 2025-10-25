@@ -23,15 +23,15 @@ typedef struct {
     int goal_reached;
 } AppState;
 
-void run_app(void);
-void show_weight_input_screen(AppState *state);
-void show_main_tracking_screen(AppState *state);
-float calculate_water_goal(float weight_lb);
-void draw_progress_bar(float progress);
-void clear_screen(void);
-void print_header(void);
-void print_success(const char* message);
-void print_error(const char* message);
-void print_info(const char* message);
-bool check_validity(const char* input);
+void run_app(void); 
+void show_weight_input_screen(AppState *state); // shows weight input / beginning screen
+void show_main_tracking_screen(AppState *state); // main screen of app-tracks water intake
+float calculate_water_goal(float weight_lb); // calculates amt of water based on inputted weight
+void draw_progress_bar(float progress); // updates progress bar with inputs
+void clear_screen(void); //used in showing new screen
+void print_header(void); // stays on top of the app for majority
+void print_success(const char* message); // formats success messages 
+void print_error(const char* message); // formats error messages
+void print_info(const char* message); // formats information
+bool check_validity(const char* input); // check validity of user input
 #endif
