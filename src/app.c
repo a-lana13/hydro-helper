@@ -21,15 +21,15 @@ void print_header(void) { //header stays on top of screen for most of app
     printf(COLOR_RESET);
 }
 
-void print_success(const char* message) {
+void print_success(const char* message) { // formats success messages
     printf(COLOR_BOLD COLOR_GREEN"✅ %s"COLOR_RESET"\n", message);
 }
 
-void print_error(const char* message) {
+void print_error(const char* message) { // formats error messages
     printf(COLOR_BOLD COLOR_RED"❌ %s"COLOR_RESET"\n", message);
 }
 
-void print_info(const char* message) {
+void print_info(const char* message) { // formats info display
     printf(COLOR_CYAN"💡 %s"COLOR_RESET"\n", message);
 }
 
